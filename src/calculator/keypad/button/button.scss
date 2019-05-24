@@ -1,0 +1,30 @@
+.button-container {
+  display: inline-flex;
+  width: 25%;
+  flex: 1 0 auto;
+
+  &--wide {
+
+    width: 50%;
+    text-align:right;
+  }
+
+
+  &__button {
+    background-color: #e0e0e0;
+    border: 16px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0 1px 0 0;
+    flex: 1 0 auto;
+    padding: 0;
+    color: #000000;
+    outline: none;
+
+    &--orange {
+      background-color: #f5923e;
+      color: white;
+    }
+  }
+}
