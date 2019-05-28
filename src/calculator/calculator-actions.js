@@ -1,4 +1,4 @@
-const BASE = 'CALCULATOR1_';
+const BASE = 'CALCULATOR_';
 export const actions = {
   calculate: BASE + 'CALCULATE'
 };
