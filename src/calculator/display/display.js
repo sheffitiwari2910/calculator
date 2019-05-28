@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './display.scss';
+import {connect} from 'react-redux';
 
 
-export default function Display(props) {
+function Display({value}) {
   return (
     <div className="display">
-      <div>{props.value}</div>
+      <div>{value}</div>
     </div>
   );
 
@@ -15,3 +16,12 @@ export default function Display(props) {
 Display.propTypes = {
   value: PropTypes.string,
 };
+
+function mapStateToProps({next,total})
+{
+  return {
+    value: (next || total  || '0')
+  }
+}
+
+export default connect(mapStateToProps)(Display);

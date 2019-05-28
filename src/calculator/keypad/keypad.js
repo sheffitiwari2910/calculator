@@ -1,44 +1,39 @@
 import Button from './button/button';
 import React from 'react';
-import PropTypes from 'prop-types';
 import './keypad.scss';
-
-export default function Keypad(props) {
+export default function Keypad() {
 
   return (
     <div className='keypad'>
       <div>
-        <Button name='C' clickHandler={props.clickHandler}/>
-        <Button name='+/-' clickHandler={props.clickHandler}/>
-        <Button name='%' clickHandler={props.clickHandler}/>
-        <Button name='÷' clickHandler={props.clickHandler} orange/>
+        <Button name='C' />
+        <Button name='+/-' />
+        <Button name='%' />
+        <Button name='÷'  orange/>
       </div>
       <div>
-        <Button name='7' clickHandler={props.clickHandler}/>
-        <Button name='8' clickHandler={props.clickHandler}/>
-        <Button name='9' clickHandler={props.clickHandler}/>
-        <Button name='x' clickHandler={props.clickHandler} orange/>
+        <Button name='7' />
+        <Button name='8' />
+        <Button name='9' />
+        <Button name='x'  orange/>
       </div>
       <div>
-        <Button name='4' clickHandler={props.clickHandler}/>
-        <Button name='5' clickHandler={props.clickHandler}/>
-        <Button name='6' clickHandler={props.clickHandler}/>
-        <Button name='-' clickHandler={props.clickHandler} orange/>
+        <Button name='4' />
+        <Button name='5' />
+        <Button name='6' />
+        <Button name='-'  orange/>
       </div>
       <div>
-        <Button name='1' clickHandler={props.clickHandler}/>
-        <Button name='2' clickHandler={props.clickHandler}/>
-        <Button name='3' clickHandler={props.clickHandler}/>
-        <Button name='+' clickHandler={props.clickHandler} orange/>
+        <Button name='1' />
+        <Button name='2' />
+        <Button name='3' />
+        <Button name='+'  orange/>
       </div>
       <div>
-        <Button name='0' clickHandler={props.clickHandler} wide/>
-        <Button name='.' clickHandler={props.clickHandler}/>
-        <Button name='=' clickHandler={props.clickHandler} orange/>
+        <Button name='0'  wide/>
+        <Button name='.' />
+        <Button name='='  orange/>
       </div>
     </div>
   );
 }
-Keypad.propTypes = {
-  clickHandler: PropTypes.func,
-};
